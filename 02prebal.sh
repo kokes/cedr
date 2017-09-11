@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir tmp
+mkdir -p tmp
 rm -f tmp/*
 mkdir data
 
