@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir -p tmp
 rm -f tmp/*
-mkdir data
+mkdir -p data
 
 for file in raw-data/*.csv.7z; do
 

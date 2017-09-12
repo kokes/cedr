@@ -1,4 +1,4 @@
-mkdir raw-data
+mkdir -p raw-data
 
 # cedr
 wget -nc -P raw-data http://cedropendata.mfcr.cz/c3lod/ciselnikDotaceTitulv01.csv.7z
