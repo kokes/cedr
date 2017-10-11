@@ -18,12 +18,12 @@ for file in data/*.csv.gz; do
 
 done
 
-sed -i '' -e 's/\.csv//g' $tg
+sed -i -e 's/\.csv//g' $tg
 
 # id... jsou char(40) jen mimo ciselniky
-# sed -i '' -e 's/\(id[a-zA-Z]*\) varchar/\1 char(40)/g' $tg
-sed -i '' -e 's/\(dt[a-zA-Z]*\) varchar/\1 timestamp/g' $tg
-sed -i '' -e 's/\([a-zA-Z]*Datum\) varchar/\1 timestamp/g' $tg
-sed -i '' -e 's/\dPlatnost varchar/dPlatnost timestamp/g' $tg
-sed -i '' -e 's/\(castka[a-zA-Z]*\) varchar/\1 float/g' $tg
-sed -i '' -e 's/\([a-zA-Z]*Indikator\) varchar/\1 bool/g' $tg
+# sed -i -e 's/\(id[a-zA-Z]*\) varchar/\1 char(40)/g' $tg
+sed -i -e 's/\(dt[a-zA-Z]*\) varchar/\1 timestamp/g' $tg
+sed -i -e 's/\([a-zA-Z]*Datum\) varchar/\1 timestamp/g' $tg
+sed -i -e 's/\dPlatnost varchar/dPlatnost timestamp/g' $tg
+sed -i -e 's/\(castka[a-zA-Z]*\) varchar/\1 float/g' $tg
+sed -i -e 's/\([a-zA-Z]*Indikator\) varchar/\1 bool/g' $tg
