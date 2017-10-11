@@ -44,7 +44,7 @@ drop table if exists Dotace; create table Dotace (
 	zahajeniPlanovaneDatum timestamp,
 	zahajeniSkutecneDatum timestamp,
 	zmenaSmlouvyIndikator bool,
-	projektIdnetifikator varchar,
+	projektIdentifikator varchar,
 	projektNazev varchar,
 	iriOperacniProgram varchar,
 	iriPodprogram varchar,
